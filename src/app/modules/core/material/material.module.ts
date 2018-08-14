@@ -47,17 +47,12 @@ import {
   ],
   declarations: [],
   exports: [
-    CdkTableModule,
-    CdkTreeModule,
     MatAutocompleteModule,
-    MatBadgeModule,
-    MatBottomSheetModule,
     MatButtonModule,
     MatButtonToggleModule,
     MatCardModule,
     MatCheckboxModule,
     MatChipsModule,
-    MatStepperModule,
     MatDatepickerModule,
     MatDialogModule,
     MatDividerModule,
@@ -79,10 +74,10 @@ import {
     MatSlideToggleModule,
     MatSnackBarModule,
     MatSortModule,
+    MatStepperModule,
     MatTableModule,
     MatTabsModule,
     MatToolbarModule,
-    MatTooltipModule,
-    MatTreeModule]
+    MatTooltipModule]
 })
 export class MaterialModule { }
