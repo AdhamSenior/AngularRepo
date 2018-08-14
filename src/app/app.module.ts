@@ -4,6 +4,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import {MaterialModule} from './modules/core/material/material.module';
+import {NewsService} from './news.service';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,7 @@ import {MaterialModule} from './modules/core/material/material.module';
     BrowserAnimationsModule,
     MaterialModule
   ],
-  providers: [],
+  providers: [NewsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
