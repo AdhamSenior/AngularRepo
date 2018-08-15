@@ -17,11 +17,42 @@
   </mat-toolbar-row>
 </mat-toolbar>
 
+<div style="text-align:center">
+  <h2>Yangiliklar</h2>
 
-body
+  <div class="row">
+    <div *ngFor="let item of dataSource" class="col-md-12" >
+      <div class="col-md-7">
+        <a href="#">
+          <img class="img-fluid rounded mb-3 mb-md-0" src="{{item.Picture}}" alt="">
+        </a>
+      </div>
+      <div class="col-md-5">
+      <h3>{{item.Title}}</h3>
+      <p>{{item.Text}}</p>
+
+      <hr>
+    </div>
+    </div>
+    <a class="btn btn-primary" href="#">Кўпроқ янгилик</a>
 
 
 
+</div>
+
+
+</div>
+
+
+
+
+<!--<h1> NGX Highlight Text Example</h1>-->
+<!--<div>-->
+  <!--<div>-->
+    <!--<input type="text" [(ngModel)]="query" placeholder="Query..." />-->
+  <!--</div>-->
+  <!--<p [innerHTML]="highlight()"></p>-->
+<!--</div>-->
 <mat-toolbar color="primary">
   <mat-toolbar-row>
     <div class="app-footer-logo">

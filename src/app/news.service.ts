@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import {Observable, of} from 'rxjs';
-import {News} from './models/news';
+
+import {News} from './models/News';
 import {news} from './mocks/news';
 
 @Injectable({
@@ -10,9 +10,6 @@ export class NewsService {
 
   constructor() { }
 
-  public getNews(): Observable<News[]> {
-    return Observable.of(news).delay(2000);
-  }
+  public getNews(): News[] {
+    return (news); }}
 
-}
-}
